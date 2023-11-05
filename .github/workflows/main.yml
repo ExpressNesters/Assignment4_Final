@@ -34,10 +34,6 @@ jobs:
       with:
         go-version: '1.16' # specify the Go version
 
-    - name: Initialize Go module
-      run: go mod init .
-      working-directory: ./backend
-
     - name: Install Go dependencies
       run: go mod tidy
       working-directory: ./backend
